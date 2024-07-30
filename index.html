@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Website Saya</h2>
+    <p>Ini adalah halaman beranda.</p>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <img src="rita.jpg" alt="Deskripsi Foto" class="profile-container" width="200" height="170">
+    <div class="profile-text">
+      <p><strong> NAMA      :</strong> Maria Meirita Nasa</p>
+      <p><strong> NIM       :</strong> 16323057</p>
+      <p><strong> JURUSAN   :</strong> Manajemen Informatika</p>
+      <p><strong> KELAS     :</strong> 1B</p>
+    </div>
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video Saya</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src="audio1.mp3"></audio>
+    <video controls autoplay src="Perkenalan_rita.mp4" width="250" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang saya</h2>
+    <p>Haloo.. perkenalkan nama saya Maria Meirita Nasa, biasanya di panggil Rita. Tapi, entah mengapa saya lebih 
+      sering di panggil bong karna bong nama pemberian dari keluarga saya karna anak bungsu, kalau orang memanggil saya dengan nama itu 
+      saya seperti di anggap keluarga oleh mereka. </p>
+
+      <p>Oh iya saya adalah anak keempat dari 4 bersaudara. Bapak saya berkerja sebagai seoraang petani dan ibu saya seorang
+        ibu rumah tangga. Saya lahir dan tumbuh besar di Fakfak pada tanggal 7 mei 2006.
+        bapa saya berasal dari ntt lebih tepatnya di pulau flores kota maumere dan mama saya pun sama berasal dari ntt 
+        lebih tepatnya di pulau flores,kota ende biasa di bilang kota pancasila, Maka dari itu saya juga sedikit bingung ketika di tanya kamu asal mana sih?
+        Tapi intinya saya berasal dari Fakfak Papua barat
+        karna saya lahir dan tumbuh besar di kota ini.</p>
+
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <p><a href="https://www.bing.com/ck/a?!&&p=8c4a725955a726edJmltdHM9MTcyMjIxMTIwMCZpZ3VpZD0zN2I4MjU2MS1lZDNjLTY4N2ItMzE1OC0zNjk3ZWM2YTY5YjMmaW5zaWQ9NTIyMQ&ptn=3&ver=2&hsh=3&fclid=37b82561-ed3c-687b-3158-3697ec6a69b3&psq=berita+singkat&u=a1aHR0cHM6Ly93d3cucnVhbmdndXJ1LmNvbS9ibG9nL2NvbnRvaC10ZWtzLWJlcml0YQ&ntb=1"></a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Rita</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
